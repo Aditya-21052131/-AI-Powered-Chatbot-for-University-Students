@@ -1,0 +1,30 @@
+-- university_database.db
+
+CREATE TABLE courses (
+	id INTEGER PRIMARY KEY,
+	course_name TEXT,
+	course_description TEXT,
+	credits INTEGER
+);
+
+CREATE TABLE faculty (
+	id INTEGER PRIMARY KEY,
+	faculty_name TEXT,
+	faculty_department TEXT,
+	faculty_email TEXT
+);
+
+CREATE TABLE events (
+	id INTEGER PRIMARY KEY,
+	event_name TEXT,
+	event_date DATE,
+	event_time TIME,
+	event_location TEXT
+);
+
+CREATE TABLE services (
+	id INTEGER PRIMARY KEY,
+	service_name TEXT,
+	service_description TEXT,
+	service_location TEXT
+);
